@@ -15,18 +15,18 @@ def index():
     if request.method == 'POST':
         try:
             #  reading the inputs given by the user
-            CRIM=double(request.form['CRIM'])
-            ZN = double(request.form['ZN'])
-            INDUS = double(request.form['INDUS'])
-            CHAS = double(request.form['CHAS'])
-            NOX = double(request.form['NOX'])
-            RM = double(request.form['RM'])
-            AGE = double(request.form['AGE'])
-            DIS = double(request.form['DIS'])
-            TAX = double(request.form['TAX'])
-            PTRATIO = double(request.form['PTRATIO'])
-            B = double(request.form['B'])
-            LSTAT = double(request.form['LSTAT'])
+            CRIM=float(request.form['CRIM'])
+            ZN = float(request.form['ZN'])
+            INDUS = float(request.form['INDUS'])
+            CHAS = int(request.form['CHAS'])
+            NOX = float(request.form['NOX'])
+            RM = float(request.form['RM'])
+            AGE = float(request.form['AGE'])
+            DIS = float(request.form['DIS'])
+            TAX = float(request.form['TAX'])
+            PTRATIO = float(request.form['PTRATIO'])
+            B = float(request.form['B'])
+            LSTAT = float(request.form['LSTAT'])
 
             filename = 'elastic_net.pickle'
             loaded_model = pickle.load(open(filename, 'rb')) # loading the model file from the storage
