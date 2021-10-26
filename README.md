@@ -1,6 +1,6 @@
 # Linear_Regression
 
-Deploying the Boston Housing Data ML problem using flask
+Deploying the Boston Housing Data ML problem using flask. In this problem we are predicting the house price.
 
 Steps followed in deploying Machine Learning model using flask to Heroku are-
 
